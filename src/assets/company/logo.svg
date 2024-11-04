@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background elliptical orbits -->
+  <ellipse cx="200" cy="200" rx="180" ry="70" fill="none" stroke="#61DAFB" stroke-width="8" transform="rotate(0 200 200)"/>
+  <ellipse cx="200" cy="200" rx="180" ry="70" fill="none" stroke="#61DAFB" stroke-width="8" transform="rotate(60 200 200)"/>
+  <ellipse cx="200" cy="200" rx="180" ry="70" fill="none" stroke="#61DAFB" stroke-width="8" transform="rotate(-60 200 200)"/>
+  
+  <!-- Central atom circle -->
+  <circle cx="200" cy="200" r="35" fill="#61DAFB"/>
+  
+  <!-- Additional details -->
+  <path d="M200 50 C250 50, 300 150, 300 200 S250 350, 200 350" fill="none" stroke="#61DAFB" stroke-width="2" opacity="0.3"/>
+  <path d="M50 200 C100 150, 150 100, 200 100 S300 150, 350 200" fill="none" stroke="#61DAFB" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Small decorative circles -->
+  <circle cx="300" cy="120" r="8" fill="#61DAFB" opacity="0.5"/>
+  <circle cx="100" cy="280" r="8" fill="#61DAFB" opacity="0.5"/>
+  <circle cx="320" cy="250" r="5" fill="#61DAFB" opacity="0.5"/>
+  <circle cx="80" cy="150" r="5" fill="#61DAFB" opacity="0.5"/>
+</svg>
