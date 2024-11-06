@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, linkedin, github } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -34,20 +34,24 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
-          className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            M Usama &nbsp;
-            <span className='sm:block hidden'> | ReactJS Developer</span>
-          </p>
-        </Link>
+        <div  className='flex items-center'>
+          <Link
+            to='/'
+            className='flex items-center gap-2'
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+            <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+              M Usama &nbsp;
+              <span className='sm:block hidden'> | ReactJS Developer &nbsp; </span>
+            </p>
+          </Link>
+          <a href="https://www.linkedin.com/in/m-usama-shafqat-839780244/"><img src={linkedin} alt='linkedinlogo' className='w-9 h-9 object-contain'/></a>&nbsp;
+          <a href="https://github.com/usamashoaib87?tab=repositories"><img src={github} alt='githublogo' className='w-9 h-9 object-contain'/></a>
+        </div>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (

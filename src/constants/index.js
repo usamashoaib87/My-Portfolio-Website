@@ -8,20 +8,12 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  tax,
+  fms,
+  gpt,
   threejs,
   logo,
   weather,
@@ -175,7 +167,7 @@ const projects = [
   {
     name: "Tax Management System",
     description:
-      "Developed Tax Management System using React, TypeScript, and Vite, featuring modules for WHT statements, CPR transactions, and certificate management.  Designed responsive UI/UX with Tailwind CSS, integrating Material UI components and lucide-react icons.  Implemented client-side form validation using react-hook-form with comprehensive error handling.  Integrated framer-motion animations to enhance user interaction and interface responsiveness.",
+      "Developed Tax Management System using React, TypeScript, and Vite, featuring modules for WHT statements, CPR transactions, and certificate management.  Designed responsive UI/UX with Tailwind CSS, integrating Material UI components and lucide-react icons.  Implemented client-side form validation using react-hook-form with comprehensive error handling. Integrated framer-motion animations to enhance user interaction.",
     tags: [
       {
         name: "react",
@@ -198,7 +190,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: carrent,
+    image: tax,
     source_code_link: "https://github.com/usamashoaib87/Tax-Management",
   },
   {
@@ -227,7 +219,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: jobit,
+    image: fms,
     source_code_link: "https://github.com/usamashoaib87/Fees-Management-System",
   },
   {
@@ -260,7 +252,7 @@ const projects = [
         color: "white-text-gradient",
       },
     ],
-    image: tripguide,
+    image: gpt,
     source_code_link: "https://github.com/usamashoaib87/GPT-4-OpenAI-Website",
   },
   {

@@ -37,9 +37,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "name",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "usamashoaib87@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -66,19 +66,17 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-black-100 p-8 rounded-2xl overflow-y-auto max-h-[860px]'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-5 flex flex-col gap-5'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -105,7 +103,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows={7}
+              rows={5}
               name='message'
               value={form.message}
               onChange={handleChange}
@@ -121,6 +119,31 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className="mt-5 pt-8 border-t border-gray-700">
+          <h4 className="text-white font-bold text-xl mb-6">Contact Information</h4>
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <span className="text-secondary font-medium min-w-[100px]">Name:</span>
+              <span className="text-white">M Usama Shafqat</span>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <span className="text-secondary font-medium min-w-[100px]">Email:</span>
+              <a href="mailto:usamashoaib87@gmail.com" className="text-white hover:text-gray-300">
+                usamashoaib87@gmail.com
+              </a>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <span className="text-secondary font-medium min-w-[100px]">Phone:</span>
+              <a href="tel:+923176648100" className="text-white hover:text-gray-300">
+                +92 317 6648100
+              </a>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+              <span className="text-secondary font-medium min-w-[100px]">Address:</span>
+              <span className="text-white">Valencia Town, Lahore</span>
+            </div>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div
